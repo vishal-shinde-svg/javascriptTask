@@ -5,54 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript curd operation.</title>
-     <link rel="stylesheet" href="style.css">
-     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-</head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
-<body>
+<!-- <body class=" font-sans bg-gradient-to-r from-gray-200 via-red-700 to-yellow-600"> -->
+    <body  class="bg-[url('./R.jpg')]">
+        
+    </body>
+    
+   <div class="grid place-items-center"> 
     
     <table>
         
         <tr>
             <td>
-                <form action="" autocomplete="off" onsubmit="onFormSubmit()">
-                    <h1> User Form </h1>
+                <form action=""  class="text-sm m-8 xs:p-4 sm:p-4 md:p-8 lg:p-8 " autocomplete="off" onsubmit="onFormSubmit()">
+                    <h1 class="font-bold  text-2xl my-4 rounded justify-between "> User Registration Form </h1>
 
-                    <div>
-                        <label for="srNo">Serial Number</label>
-                        <input type="text" name="srNo" id="srNo">
+                    <div class=" rounded mb-4 shadow appearance-none label-floating">
+                        <label  class=" mx-4 text-bold mb-4 " for="EmpNo">Emp No</label>
+                        <input  class="w-full py-2 px-3 text-black leading-normal rounded" type="text" name="EmpNo" id="EmpNo">
                     </div>
-                    <div>
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName">
+                    <div class=" rounded mb-4 shadow appearance-none label-floating">
+                        <label class=" mx-4 text-bold mb-4 " for="firstName">First Name</label>
+                        <input class="w-full py-2 px-3 text-black leading-normal rounded" type="text" name="firstName" id="firstName">
                     </div>
-                    <div>
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName">
+                    <div class=" rounded mb-4 shadow appearance-none label-floating">
+                        <label class=" mx-4 text-bold mb-4 "for="lastName">Last Name</label>
+                        <input  class="w-full py-2 px-3 text-black leading-normal rounded" type="text" name="lastName" id="lastName">
                     </div>
-                    <div class="form_action-button" >
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset"> 
+                    
+                    <div class=" rounded mb-4 shadow appearance-none label-floating ">
+                        <label class=" mx-4 text-bold mb-8 " for="firstName">Password</label>
+                        <input class="w-full py-2 px-3 text-black leading-normal rounded" type="password" name="Password" id="Password">
                     </div>
+                    <div class=" rounded mb-4 shadow appearance-none label-floating">
+                        <label class=" mx-4 text-bold mb-4 "for="lastName">pwd</label>
+                        <input  class="w-full py-2 px-3 text-black leading-normal rounded" type="password" name="pwd" id="pwd">
+                    </div>
+                    
+                    <div class="form_action-button flex flex-wrap py-2 items-center justify-evenly pt-4 my-4" >
+                        <input class="bg-black hover:bg-white hover:text-black text-white py-2 px-4 rounded"  type="submit" value="Submit">
+                    
+                    <div class="form_action-button flex flex-wrap py-2 items-center justify-evenly pt-4 my-3" >
+                        <input class="bg-black hover:bg-white hover:text-black text-white  py-2 px-4 rounded"  type="reset" value="Reset"> 
+                    </div>
+                </div>
                 </form>
+                
                 <td>
-                    <table class="list" id="storelist">
+                </td>
+                    
+                    <table class="list table-auto top-12 border-black border-separate border border-slate-400" id="storelist">
+                        
                         <thead>
                             <tr>
-                                <th>Serial Number</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
+                                <th class="border border-slate-300" >Emp Number</th>
+                                <th  class="border border-slate-300">First Name</th>
+                                <th class="border border-slate-300">Last Name</th>
+                                <th class="border border-slate-300">Password </th>
+                                <th class="border border-slate-300">pwd</th>
+                                <th class="border border-slate-300"> Action</th>
+                                
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="border border-slate-300">
+                            
+
 
                         </tbody>
                     </table>
                 </td>
-            </td>
+            
+            
         </tr>
     </table>
+    </div>
     <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
